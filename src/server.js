@@ -38,9 +38,10 @@ function pageGiveClasses(req, res) {
 
 const express = require("express")
 const server = express()
-const nunjucks = require("nunjucks")
+
 
 // Configurar nunjucks
+const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
     noCache: true,
